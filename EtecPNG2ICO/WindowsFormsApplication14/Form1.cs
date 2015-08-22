@@ -9,6 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 
+/*
+    By Anderson Luiz de Oliveira [anderson.oliveira178@etec.sp.gov.br]
+    using opensource png2ico.exe by Matthias Benkmann - http://www.winterdrache.de/
+    Visit my blog: http://www.informaticaatibaia.com
+    Visit my site School: http://www.etecarmine.com.br
+
+    License: http://www.gnu.org/licenses/gpl-3.0.en.html
+    Git: https://github.com/profanderson/Etec_Png2Ico_Converter
+*/
 
 namespace WindowsFormsApplication14
 {
@@ -17,7 +26,6 @@ namespace WindowsFormsApplication14
         public Form1()
         {
             InitializeComponent();
-
         }
         
 
@@ -36,10 +44,52 @@ namespace WindowsFormsApplication14
             String ico = "\"" + System.IO.Path.GetFileNameWithoutExtension(textBox1.Text) + ".ico\"";
 
             ProcessStartInfo converter = new ProcessStartInfo();
-            converter.FileName = "data/png2ico.exe";
-            converter.Arguments = ico + " " + png;
+            converter.FileName = "png2ico.exe"; //look: http://www.winterdrache.de/freeware/png2ico/index.html 
+            converter.Arguments = " " + ico + " " + png;            
+            converter.WindowStyle = ProcessWindowStyle.Hidden;
             Process.Start(converter);
-            MessageBox.Show("Feito!");
+
+            
+            // Waiting converter... 
+            ProcessStartInfo Wait = new ProcessStartInfo();
+            Wait.FileName = "cmd.exe";
+            Wait.Arguments = "/c timeout 2";
+            Wait.WindowStyle = ProcessWindowStyle.Hidden;
+            Process.Start(Wait);
+            
+
+            // Create dir output
+            ProcessStartInfo CreatePasteOutput = new ProcessStartInfo();
+            CreatePasteOutput.FileName = "cmd.exe";
+            CreatePasteOutput.Arguments = "/c mkdir output";
+            CreatePasteOutput.WindowStyle = ProcessWindowStyle.Hidden;
+            Process.Start(CreatePasteOutput);
+
+            // Move file to 
+            ProcessStartInfo MoveIco = new ProcessStartInfo();
+            MoveIco.FileName = "cmd.exe";
+            MoveIco.Arguments = "/c move *.ico output";
+            MoveIco.WindowStyle = ProcessWindowStyle.Hidden;
+            Process.Start(MoveIco);
+            
+            // Open Explorer
+            ProcessStartInfo OpenExplorer = new ProcessStartInfo();
+            OpenExplorer.FileName = "explorer.exe";
+            OpenExplorer.Arguments = "output";            
+            Process.Start(OpenExplorer);
+
+            //MessageBox.Show("Done!");
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 frmAbout = new Form2();
+            frmAbout.Show();
+        }
+
+        private void likeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://informaticaatibaia.com/LikeInFacebook.html");
         }
     }
 }

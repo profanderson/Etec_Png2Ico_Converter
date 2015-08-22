@@ -7,3 +7,14 @@ c:\users\anderson\documents\visual studio 2012\Projects\EtecPNG2ICO\WindowsForms
 c:\users\anderson\documents\visual studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csproj.GenerateResource.Cache
 c:\users\anderson\documents\visual studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.exe
 c:\users\anderson\documents\visual studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.pdb
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe.config
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.exe
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.pdb
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.pdb
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csprojResolveAssemblyReference.cache
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Form1.resources
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Properties.Resources.resources
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csproj.GenerateResource.Cache
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Form2.resources
+D:\Documentos\Visual Studio 2012\Projects\EtecPNG2ICO\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Form3.resources
